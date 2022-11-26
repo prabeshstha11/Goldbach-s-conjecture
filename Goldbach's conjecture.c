@@ -40,15 +40,15 @@ void findPrime()
 
 int checkPrime(int checkNumber)
 {
-    int countDivisibleBy = 0;
+    int countDivisible = 0;
     for (int count = 1; count <= checkNumber; count++)
     {
         if (checkNumber % count == 0)
         {
-            countDivisibleBy++;
+            countDivisible++;
         }
     }
-    if (countDivisibleBy == 2)
+    if (countDivisible == 2)
         return checkNumber;
     else
         return 0;
